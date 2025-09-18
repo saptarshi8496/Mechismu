@@ -2,18 +2,18 @@
 
 This project documents the complete process of design of a rule-compliant chassis for Formula Bharat 2025. The work focused on ensuring driver safety, manufacturability, and compliance with competition rules, while enabling integration with subsystems such as suspension, steering, and powertrain. An inside-to-outside approach was decided upon to design the chassis. This meant that we would start with the design of the powertrain system, such as the battery module, gearbox, motor placement etc. and then work on covering the area as efficiently as possible with the chassis.
 
-## Project Outline
-After discussion with team members, we decided upon the following to be our outline for design of the chassis.
+## Table of Contents
+- Introduction
+- Project Workflow
+- Key Features
+- Softwares Used
+- Results and Deliverables
 
-1. Finalise the outer boundaries of the battery module, electronics, powertrain and gearbox to get a rough outline of the rear of the car. This was important because proper placement is more important in the rear as the battery and motor were the heaviest parts of the car.
-2. Finalise the outer boundaries of the front of the chassis by taking into account pedal assembly dimensions, and the two important templates - cockpit cross-section template and cockpit-opening template.
-3. Design the front and main roll hoops and start designing the chassis using Weldments in Solidworks. Consider driver seat back angle into the roll hoop design as it would directly affect the firewall design.
-4. After the suspension points were finalized by the suspension department, connect the points to the roll hoops, bulkheads and impact structures to
-5. Carry out impact analyses to judge safety. The simulation results would give an ideal result and would not take into account any strength lost due to improper welding or misalignments, so we decided to atleast get a rough FOS of 3 to 3.5 for all tests. Changes were made to the chassis to make critical points more supported.
-6. Prepare the weldments to be manufactured by printing their profiles on the tubes and manually cutting them.
-7. Designing mounts for all components to be mounted to the chassis, from suspension, brakes, A-arms to battery, motor and gearbox.
+### Material Selection
 
-### Preparing the Outer Boundaries
+After careful consideration of the available materials on the basis of strength, cost, availability - we decided upon AISI 4130 (Chromoly Steel) as our material. This provided high strength and lower weight, but at a higher cost. However, it was readily available.
+
+### Preparing the Outer Boundaries and Suspension Points
 
 This was the first step in our design, as having a set 'box' to refer while making changes inside would make the design process simpler.
 
@@ -25,4 +25,24 @@ The Percy model was used extensively to finalise the driver position for our car
 
 The suspension pick-up points were joined to the roll hoops and bulkheads in a star pattern to ensure maximum strength while keeping the design as simple as possible.
 
-### Trimming the Weldments
+### Analysis
+
+Impact analysis were carried out on the chassis to ensure safety. Three tests were performed - Impact (Front, Rear and Side), Bending and Torsion. These tests had different boundary conditions and forces applied, which were calculated considering an average case. The Factor of Safety obtained from these tests were taken as the ideal values. There would be loss in strength and stiffness after the chassis was built physically due to small misalignments, lack of perfect welding, certain dimensional errors and more.
+
+### Trimming the Weldments and Creating Profiles
+
+This was the most important part in terms of manufacturing. Proper trimming of all the joints were required in order to easily fit them after cutting the profiles. To prepare the chassis for this process, a colour code was followed to easily distinguish between tubes of three thicknesses - 2.5mm, 1.65mm and 1.2mm. After that, the process to convert the CAD Model to a physical model was as follows
+1. Create a surface on each weldment with surface offset 0.
+2. Flatten the surface separately by creating a very small slit.
+3. Convert the flat surface to a drawing, and then print the PDF.
+4. Paste the profile on tubes at proper lengths, and then cut the profiles.
+5. Use fixtures designed earlier to align the tubes on a table.
+6. Weld the joints and paint the chassis quickly to avoid rusting.
+
+### Finalizing other components
+
+After the key work of chassis design was completed, we proceded to the other departments' work. Mounts were designed and manufactured for all components - from suspension and brake pedals to battery and motor. 
+
+### Documentation
+
+To validate our 
